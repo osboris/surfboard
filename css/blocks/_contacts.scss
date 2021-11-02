@@ -1,0 +1,22 @@
+.contacts {
+    font-size: rem(22px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    @include tablets {
+        display: none;
+    }
+}
+
+.contacts__img {
+    width: rem(14px);
+    height: rem(14px);
+    flex-shrink: 0;
+}
+
+.contacts__phone {
+    margin-left: rem(6px);
+    white-space: nowrap;
+}
+
+

@@ -1,0 +1,100 @@
+.surf-contacts {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.maps__img {
+    width: 100%;
+    height: 100%;
+}
+
+.maps {
+    //position: relative;
+    flex: 1;
+    
+}
+
+.footer {
+    padding-left: 10%;
+    padding-right: 10%;
+    //position: absolute;
+    display: block;
+    height: 10%;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablets {
+        padding-left: 7%;
+        padding-right: 7%;
+        }
+
+        @include phones {
+            display: flex;
+            flex-direction: column;
+            padding-top: 2%;
+            }
+    
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+
+    @include phones {
+        align-items: center;
+        }
+
+}
+
+.footer__contacts {
+    margin-top: 2%;
+    font-size: 21px;
+    color: #292929;
+    font-size: rem(22px);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.footer__contacts__img {
+    width: rem(14px);
+    height: rem(14px);
+    flex-shrink: 0;
+}
+
+.footer__contacts__phone {
+    font-size: 21px;
+    color: #292929;
+    margin-left: rem(6px);
+    white-space: nowrap;
+}
+
+.footer__contacts__info {
+    font-size: 21px;
+    color: #292929;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons__item {
+    margin-right: rem(14px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.social-icons__item__icon{
+    cursor: pointer;
+    width: rem(20px);
+    height: rem(20px);
+}
+

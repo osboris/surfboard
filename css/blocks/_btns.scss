@@ -1,0 +1,41 @@
+.btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: rem(16px);
+    color: $slick-btn-text-color;
+    width: rem(156px);
+    height: rem(60px);
+    background: $slick-btn-background-color;
+    border-radius: rem(100px);
+    border: none;
+    margin-top: 4%;
+
+    &:hover {
+        cursor: pointer;
+        color:$slick-btn-hover-text-color;
+        background: $slick-btn-hover-background-color;
+        border: none;
+        transition: color .3s,;
+    }
+}
+
+.btn--transparent {
+    background: transparent;
+    color: #FFFFFF;
+    font-size: rem(18px);
+    text-transform: none;
+    border: none;
+    margin-left: rem(22px);
+    width: auto;
+
+    &:hover {
+        color: $slick-btn-background-color;
+        border: none;
+        transition: color .3s;
+        background: none;
+    }
+
+}

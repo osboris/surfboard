@@ -1,0 +1,15 @@
+@function rem($px) {
+    @return $px / $slick-base-font-size + 0rem;
+}
+
+@mixin tablets {
+    @media screen and (max-width: $slick-tablets) {
+    @content;
+    } 
+}
+
+@mixin phones {
+    @media screen and (max-width: $slick-phones) {
+    @content;
+    } 
+}
