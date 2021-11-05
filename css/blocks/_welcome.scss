@@ -3,6 +3,20 @@
     background-size: cover;
 }
 
+
+.hello:before {
+    @include tablets {
+        content:"";
+        display:block;
+        position: absolute;
+        height: rem(91px);
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        background: #1968B1;   
+    }
+}
+
 .hello {
     @include tablets {
         background: $slick-background-hello-tablets;
@@ -12,23 +26,25 @@
 
 .hello {
     @include phones {
-       background: #1968B1; 
+       background: url(../image/hello-background-480.png) center top no-repeat;
        background-size: cover;
     }
 }
 
 .hello:before {
-    @include tablets {
+    @include phones {
         content:"";
         display:block;
         position: absolute;
-        height: 10%;
+        height: rem(91px);
         width: 100%;
         top: 0px;
         left: 0px;
         background: #1968B1;   
     }
 }
+
+
 
 .container {
     @include tablets {

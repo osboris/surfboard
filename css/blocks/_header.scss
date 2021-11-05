@@ -1,9 +1,18 @@
 .header {
     position: relative;
-    padding-top: 2%;
+    padding-top: rem(25px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
+
+    @include tablets {
+        padding-right: rem(5px);
+    }
+
+    @include phones {
+        padding-left: rem(2px);
+        padding-right: rem(0px);
+    }
 }
 
